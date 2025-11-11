@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ja-jp" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="自分のブログを作りたい！\r自分のブログを作りたいと思った。\nそう、エンジニア2年目に突入するにもかかわらず、自分のブログを持っていないことに気づいたのである。\n使用する技術の選定\rブログを作るとしても、使う技術は様々。\n少し考えただけでも以下の選択肢がある。\n">
+<title>Hugo &#43; GitHub Pagesでブログ作成</title>
+
+<link rel='canonical' href='http://localhost:1313/posts/hugo--github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90/'>
+
+<link rel="stylesheet" href="/scss/style.min.eea6c0817d4a0d3c34272e03004f19c49b1f4ffe84addc4bf8e1a10aa61b079f.css"><meta property='og:title' content="Hugo + GitHub Pagesでブログ作成">
+<meta property='og:description' content="自分のブログを作りたい！\r自分のブログを作りたいと思った。\nそう、エンジニア2年目に突入するにもかかわらず、自分のブログを持っていないことに気づいたのである。\n使用する技術の選定\rブログを作るとしても、使う技術は様々。\n少し考えただけでも以下の選択肢がある。\n">
+<meta property='og:url' content='http://localhost:1313/posts/hugo--github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90/'>
+<meta property='og:site_name' content='UruFiop&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Hugo' /><meta property='article:tag' content='GitHub Pages' /><meta property='article:published_time' content='2025-11-11T20:11:51&#43;09:00'/><meta property='article:modified_time' content='2025-11-11T20:11:51&#43;09:00'/>
+<meta name="twitter:title" content="Hugo + GitHub Pagesでブログ作成">
+<meta name="twitter:description" content="自分のブログを作りたい！\r自分のブログを作りたいと思った。\nそう、エンジニア2年目に突入するにもかかわらず、自分のブログを持っていないことに気づいたのである。\n使用する技術の選定\rブログを作るとしても、使う技術は様々。\n少し考えただけでも以下の選択肢がある。\n">
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-W7K4CE9PWG"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-W7K4CE9PWG');
+        }
+      </script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "light");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="メニューを開く・閉じる">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_3d65e359eaed023d.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😇</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">UruFiop&#39;s Blog</a></h1>
+            <h2 class="site-description">気まぐれに。</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/UruFiop'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://x.com/UruFiop'
+                        target="_blank"
+                        title="X (Twitter)"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目次</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#使用する技術の選定">使用する技術の選定</a></li>
+    <li><a href="#hugoをインストールする">Hugoをインストールする</a></li>
+    <li><a href="#サイトの作成">サイトの作成</a></li>
+    <li><a href="#テーマの追加">テーマの追加</a></li>
+    <li><a href="#記事の作成">記事の作成</a></li>
+    <li><a href="#ローカルで確認">ローカルで確認</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E8%A1%93/" >
+                技術
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/hugo--github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90/">Hugo &#43; GitHub Pagesでブログ作成</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2025-11-11T20:11:51&#43;09:00'>11月 11, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    読了時間: 5分
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="自分のブログを作りたい">自分のブログを作りたい！
+</h1><p>自分のブログを作りたいと思った。<br>
+そう、エンジニア2年目に突入するにもかかわらず、自分のブログを持っていないことに気づいたのである。</p>
+<h2 id="使用する技術の選定">使用する技術の選定
+</h2><p>ブログを作るとしても、使う技術は様々。<br>
+少し考えただけでも以下の選択肢がある。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: left">技術</th>
+          <th style="text-align: left">感想</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">HTML + CSS</td>
+          <td style="text-align: left">ブログを作成するには大変か…？</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">ブログサービス(はてなブログなど)</td>
+          <td style="text-align: left">せっかくブログを作るなら、ちょっと技術的なことをやりたい</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">WordPress</td>
+          <td style="text-align: left">環境作りやサーバーの確保を考えるとめんどくさい</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">React</td>
+          <td style="text-align: left">Reactをガリガリ書くのはめんどくさい</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Next.js</td>
+          <td style="text-align: left">デファクトスタンダード感があるし、面白そう</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Astro</td>
+          <td style="text-align: left">パフォーマンスが良く、しかも新しい</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Hugo</td>
+          <td style="text-align: left">比較的簡単にブログを作れそう</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>流石にHTML + CSSは論外だし、ブログサービスも面白みがなさそう。<br>
+WordPressも最初がめんどくさそうだし、セキュリティ対策が大変だと聞くしなぁ…</p>
+<p>ReactもNext.jsもAstroもNode.js系で、Node.jsには色々とトラウマを抱えているので、今回は <strong>Hugo</strong> を使うことにした。</p>
+<h2 id="hugoをインストールする">Hugoをインストールする
+</h2><p>さっそく私の友達、GeminiさんにHugoの試し方を聞いてみよう。</p>
+<blockquote>
+<ol>
+<li>Hugoのインストール
+まず、お使いのOSにHugoをインストールする必要があります。Hugoの公式サイトには、各OS（Windows、macOS、Linux）ごとのインストール方法が記載されています。</li>
+</ol>
+</blockquote>
+<p>まずはインストールが必要なようだ。<br>
+私はWinGet信者なので、WinGetを使用してインストールを行う。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">C:\&gt;winget search hugo
+</span></span><span class="line"><span class="cl">名前            ID                    バージョン 一致          ソース
+</span></span><span class="line"><span class="cl">---------------------------------------------------------------------
+</span></span><span class="line"><span class="cl">Hugo            Hugo.Hugo             0.152.2                  winget
+</span></span><span class="line"><span class="cl">Hugo (Deploy)   Hugo.Hugo.Deploy      0.150.0    Command: hugo winget
+</span></span><span class="line"><span class="cl">Hugo (Extended) Hugo.Hugo.Extended    0.152.2                  winget
+</span></span><span class="line"><span class="cl">～ 中略 ～
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Hugoにもいろいろと種類があるようだが、ここは**Hugo (Extended)**をインストールしてみよう。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">C:\&gt;winget install Hugo.Hugo.Extended
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">～ 中略 ～
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C:\&gt;hugo version
+</span></span><span class="line"><span class="cl">hugo v0.152.2-6abdacad3f3fe944ea42177844469139e81feda6+extended windows/amd64 BuildDate=2025-10-24T15:31:49Z VendorInfo=gohugoio
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>無事、インストールができた。</p>
+<h2 id="サイトの作成">サイトの作成
+</h2><p>Geminiさんの回答の続きを見ていこう。</p>
+<blockquote>
+<ol start="2">
+<li>新しいサイトの作成
+Hugoがインストールできたら、コマンドで新しいブログサイトの雛形を作成します。</li>
+</ol>
+</blockquote>
+<p>Hugoではコマンドを一つ実行するだけで簡単にサイトを作れるようだ。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">C:\&gt;hugo new site my-blog
+</span></span><span class="line"><span class="cl">Congratulations! Your new Hugo site was created in C:\my-blog.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C:\&gt;cd my-blog
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C:\my-blog&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>うーん、すごい簡単。</p>
+<h2 id="テーマの追加">テーマの追加
+</h2><blockquote>
+<ol start="3">
+<li>テーマの追加
+Hugoサイトのデザインはテーマによって決定されます。<br>
+①テーマを探す: Hugo Themesのウェブサイトなどで気に入ったテーマを見つけます。</li>
+</ol>
+</blockquote>
+<p>Hugoはテーマというものが存在するらしい。<br>
+WordPress民にとっては馴染みのある概念だと思うが、要は<strong>ブログの外見</strong>を簡単に設定できるテンプレートのようなものだ。</p>
+<p>テーマについては、以下のサイトから調べることができる。<br>
+<a class="link" href="https://themes.gohugo.io/"  target="_blank" rel="noopener"
+    >Hugo Themes</a></p>
+<p>その中から、自分が色々見てよいと思ったものをピックアップしてみた。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: left">テーマ</th>
+          <th style="text-align: left">感想</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><a class="link" href="https://themes.gohugo.io/themes/hugo-papermod/"  target="_blank" rel="noopener"
+    >PaperMod</a></td>
+          <td style="text-align: left">とてもシンプル。技術系ブログに似合いそう</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a class="link" href="https://themes.gohugo.io/themes/hugo-theme-stack/"  target="_blank" rel="noopener"
+    >Stack</a></td>
+          <td style="text-align: left">モダンで見栄えが良い。<strong>一番気に入った</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a class="link" href="https://themes.gohugo.io/themes/blowfish/"  target="_blank" rel="noopener"
+    >Blowfish</a></td>
+          <td style="text-align: left">ふぐがかわいい。デザイナーの人にいいかも</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a class="link" href="https://themes.gohugo.io/themes/hugo-profile/"  target="_blank" rel="noopener"
+    >Hugo Profile</a></td>
+          <td style="text-align: left">就活向け。ポートフォリオを紹介するのによさそう</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>各テーマは紹介ページのDemoボタンからデモページが見れるので、ぜひ活用されたし。<br>
+<img src="/images/my-first-post/Demo%e3%83%9c%e3%82%bf%e3%83%b3.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Demoボタン"
+	
+	
+></p>
+<p>私は<a class="link" href="https://themes.gohugo.io/themes/hugo-theme-stack/"  target="_blank" rel="noopener"
+    >Stack</a>が一番気に入ったので、これを使用することにした。</p>
+<blockquote>
+<p>②テーマをダウンロード: サイトのディレクトリ (my-blog) 内に、テーマをGitのサブモジュールとして追加するのが一般的です。</p>
+</blockquote>
+<p>テーマのダウンロードも簡単で、先ほど作ったフォルダの中で以下のコマンドを実行するだけ。<br>
+なお、テーマの名前はGitHubの名前である。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">C:\my-blog&gt;git init
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C:\my-blog&gt;git submodule add [テーマのリポジトリURL] themes/[テーマの名前]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>テーマのリポジトリURLについては、テーマの紹介ページのDownloadを押すとGitHubに飛ぶので、<br>
+緑色のCodeボタンを押した後にコピーボタンを押すとURLがコピーできる。
+<img src="/images/my-first-post/Download%e3%83%9c%e3%82%bf%e3%83%b3.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Downloadボタン"
+	
+	
+>
+<img src="/images/my-first-post/GitHub%e3%81%ae%e3%82%b3%e3%83%94%e3%83%bc%e3%83%9c%e3%82%bf%e3%83%b3.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="GitHubのコピーボタン"
+	
+	
+></p>
+<blockquote>
+<p>③テーマを設定: サイトの設定ファイル（通常は config.toml または hugo.toml）に、使用するテーマを指定します。</p>
+</blockquote>
+<p>先ほど作ったフォルダの中に<code>config.toml</code>があると思うので、以下のように変更する。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">baseURL = &#39;http://localhost:1313/&#39; # 自分のサイトURL
+</span></span><span class="line"><span class="cl">languageCode = &#39;ja-jp&#39; # デフォルトはen-usだが、日本に変更
+</span></span><span class="line"><span class="cl">title = &#34;UruFiop&#39;s Blog&#34;
+</span></span><span class="line"><span class="cl">theme = &#39;テーマの名前&#39; # 追加したテーマの名前に変更
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="記事の作成">記事の作成
+</h2><blockquote>
+<ol start="4">
+<li>コンテンツ（記事）の作成</li>
+</ol>
+</blockquote>
+<p>コンテンツの作成には以下のコマンドを使う。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo new posts/my-first-post.md # 好きなファイル名にして良い(ex. saisyo.md)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>すると、<code>content/posts</code>フォルダの中に<code>my-first-post.md</code>が作成されていると思う。<br>
+これで記事は作成できた。簡単。</p>
+<p>作成したファイルを開いてみる。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">date = &#39;2025-11-11T22:42:11+09:00&#39;
+</span></span><span class="line"><span class="cl">draft = true # trueだと記事を公開しない、公開するときはfalseにする
+</span></span><span class="line"><span class="cl">title = &#39;My First Post&#39;
+</span></span><span class="line"><span class="cl">+++
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>記事は<code>+++</code>の下にMarkdown形式で記載していく。<br>
+Markdown形式については<a class="link" href="https://qiita.com/Qiita/items/c686397e4a0f4f11683d"  target="_blank" rel="noopener"
+    >こちらの記事</a>を参照するとよい。</p>
+<p>試しに、以下のように記載してみる。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">date = &#39;2025-11-11T22:42:11+09:00&#39;
+</span></span><span class="line"><span class="cl">draft = true
+</span></span><span class="line"><span class="cl">title = &#39;My First Post&#39;
+</span></span><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Hello
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">こんにちわ
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="ローカルで確認">ローカルで確認
+</h2><blockquote>
+<ol start="5">
+<li>ローカルでのプレビュー
+記事を書き進める際は、ローカルサーバーを起動し、ブラウザでリアルタイムにサイトを確認できます。</li>
+</ol>
+</blockquote>
+<p>以下のコマンドを使うと、ローカルで自分のブログを確認できる。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">C:\my-blog&gt;hugo server -D # -Dはドラフト記事(まだ公開していない記事)も確認できる引数
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>実行したら、<a class="link" href="http://localhost:1313/"  target="_blank" rel="noopener"
+    >http://localhost:1313/</a>から自分のブログを確認できる。<br>
+もちろん、ローカルで確認しているだけなので、ネット上に公開されているわけではない。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/hugo/">Hugo</a>
+        
+            <a href="/tags/github-pages/">GitHub Pages</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 UruFiop
+    </section>
+    
+    <section class="powerby">
+        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> で構築されています。 <br />
+        テーマ <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> は <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> によって設計されています。
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c584201fa45e62e9c7093e254e43aeb871d3267d998fcb5dc390d2d72dea9193.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
