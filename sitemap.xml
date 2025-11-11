@@ -5,7 +5,22 @@
     <loc>https://localhost:1313/</loc>
     <lastmod>2025-11-11T20:11:51+09:00</lastmod>
   </url><url>
+    <loc>https://localhost:1313/categories/</loc>
+    <lastmod>2025-11-11T20:11:51+09:00</lastmod>
+  </url><url>
+    <loc>https://localhost:1313/tags/hugo/</loc>
+    <lastmod>2025-11-11T20:11:51+09:00</lastmod>
+  </url><url>
+    <loc>https://localhost:1313/posts/hugo--github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90-hugo%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%82%92%E7%9F%A5%E3%82%8B/</loc>
+    <lastmod>2025-11-11T20:11:51+09:00</lastmod>
+  </url><url>
     <loc>https://localhost:1313/posts/</loc>
+    <lastmod>2025-11-11T20:11:51+09:00</lastmod>
+  </url><url>
+    <loc>https://localhost:1313/tags/</loc>
+    <lastmod>2025-11-11T20:11:51+09:00</lastmod>
+  </url><url>
+    <loc>https://localhost:1313/categories/%E6%8A%80%E8%A1%93/</loc>
     <lastmod>2025-11-11T20:11:51+09:00</lastmod>
   </url><url>
     <loc>https://localhost:1313/archives/</loc>
@@ -16,10 +31,6 @@
   </url><url>
     <loc>https://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://localhost:1313/categories/</loc>
-  </url><url>
     <loc>https://localhost:1313/search/</loc>
-  </url><url>
-    <loc>https://localhost:1313/tags/</loc>
   </url>
 </urlset>

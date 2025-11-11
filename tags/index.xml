@@ -6,6 +6,15 @@
         <description>Recent content in Tags on UruFiop&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-jp</language>
-        <copyright>UruFiop</copyright><atom:link href="https://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>UruFiop</copyright>
+        <lastBuildDate>Tue, 11 Nov 2025 20:11:51 +0900</lastBuildDate><atom:link href="https://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hugo</title>
+        <link>https://localhost:1313/tags/hugo/</link>
+        <pubDate>Tue, 11 Nov 2025 20:11:51 +0900</pubDate>
+        
+        <guid>https://localhost:1313/tags/hugo/</guid>
+        <description></description>
+        </item>
+        
     </channel>
 </rss>
