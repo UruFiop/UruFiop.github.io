@@ -8,11 +8,11 @@
         <language>ja-jp</language>
         <copyright>UruFiop</copyright>
         <lastBuildDate>Tue, 11 Nov 2025 20:11:51 +0900</lastBuildDate><atom:link href="https://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>My First Post</title>
-        <link>https://localhost:1313/posts/my-first-post/</link>
+        <title>Hugoで</title>
+        <link>https://localhost:1313/posts/hugo%E3%81%A7/</link>
         <pubDate>Tue, 11 Nov 2025 20:11:51 +0900</pubDate>
         
-        <guid>https://localhost:1313/posts/my-first-post/</guid>
+        <guid>https://localhost:1313/posts/hugo%E3%81%A7/</guid>
         <description>&lt;h2 id=&#34;first-post&#34;&gt;First Post
 &lt;/h2&gt;&lt;p&gt;こんにちわ。&lt;/p&gt;
 </description>
