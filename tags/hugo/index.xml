@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Hugo on UruFiop&#39;s Blog</title>
-        <link>https://localhost:1313/tags/hugo/</link>
+        <link>https://urufiop.github.io/tags/hugo/</link>
         <description>Recent content in Hugo on UruFiop&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-jp</language>
         <copyright>UruFiop</copyright>
-        <lastBuildDate>Tue, 11 Nov 2025 20:11:51 +0900</lastBuildDate><atom:link href="https://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 11 Nov 2025 20:11:51 +0900</lastBuildDate><atom:link href="https://urufiop.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo &#43; GitHub Pagesでブログ作成 - Hugoの基本を知る</title>
-        <link>https://localhost:1313/posts/hugo--github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90-hugo%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%82%92%E7%9F%A5%E3%82%8B/</link>
+        <link>https://urufiop.github.io/posts/hugo--github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90-hugo%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%82%92%E7%9F%A5%E3%82%8B/</link>
         <pubDate>Tue, 11 Nov 2025 20:11:51 +0900</pubDate>
         
-        <guid>https://localhost:1313/posts/hugo--github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90-hugo%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%82%92%E7%9F%A5%E3%82%8B/</guid>
+        <guid>https://urufiop.github.io/posts/hugo--github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90-hugo%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%82%92%E7%9F%A5%E3%82%8B/</guid>
         <description>&lt;h1 id=&#34;自分のブログを作りたい&#34;&gt;自分のブログを作りたい！
 &lt;/h1&gt;&lt;p&gt;自分のブログを作りたいと思った。&lt;br&gt;
 そう、エンジニア2年目に突入するにもかかわらず、自分のブログを持っていないことに気づいたのである。&lt;/p&gt;
@@ -183,7 +183,7 @@ WordPress民にとっては馴染みのある概念だと思うが、要は&lt;s
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;各テーマは紹介ページのDemoボタンからデモページが見れるので、ぜひ活用されたし。&lt;br&gt;
-&lt;img src=&#34;https://localhost:1313/images/my-first-post/Demo%e3%83%9c%e3%82%bf%e3%83%b3.png&#34;
+&lt;img src=&#34;https://urufiop.github.io/images/my-first-post/Demo%e3%83%9c%e3%82%bf%e3%83%b3.png&#34;
 	
 	
 	
@@ -214,7 +214,7 @@ WordPress民にとっては馴染みのある概念だと思うが、要は&lt;s
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;テーマのリポジトリURLについては、テーマの紹介ページのDownloadを押すとGitHubに飛ぶので、&lt;br&gt;
 緑色のCodeボタンを押した後にコピーボタンを押すとURLがコピーできる。
-&lt;img src=&#34;https://localhost:1313/images/my-first-post/Download%e3%83%9c%e3%82%bf%e3%83%b3.png&#34;
+&lt;img src=&#34;https://urufiop.github.io/images/my-first-post/Download%e3%83%9c%e3%82%bf%e3%83%b3.png&#34;
 	
 	
 	
@@ -224,7 +224,7 @@ WordPress民にとっては馴染みのある概念だと思うが、要は&lt;s
 	
 	
 &gt;
-&lt;img src=&#34;https://localhost:1313/images/my-first-post/GitHub%e3%81%ae%e3%82%b3%e3%83%94%e3%83%bc%e3%83%9c%e3%82%bf%e3%83%b3.png&#34;
+&lt;img src=&#34;https://urufiop.github.io/images/my-first-post/GitHub%e3%81%ae%e3%82%b3%e3%83%94%e3%83%bc%e3%83%9c%e3%82%bf%e3%83%b3.png&#34;
 	
 	
 	
