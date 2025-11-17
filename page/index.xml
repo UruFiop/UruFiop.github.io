@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on UruFiop&#39;s Blog</title>
-        <link>https://urufiop.github.io/page/</link>
+        <link>https://urufiop.jp/page/</link>
         <description>Recent content in Pages on UruFiop&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-jp</language>
         <copyright>UruFiop</copyright>
-        <lastBuildDate>Mon, 10 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://urufiop.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 10 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://urufiop.jp/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archives</title>
-        <link>https://urufiop.github.io/archives/</link>
+        <link>https://urufiop.jp/archives/</link>
         <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://urufiop.github.io/archives/</guid>
+        <guid>https://urufiop.jp/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>About</title>
-        <link>https://urufiop.github.io/about/</link>
+        <link>https://urufiop.jp/about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://urufiop.github.io/about/</guid>
+        <guid>https://urufiop.jp/about/</guid>
         <description>&lt;h2 id=&#34;-who-is-urufiop&#34;&gt;🧑‍💻 Who is UruFiop?
 &lt;/h2&gt;&lt;p&gt;こんにちは、UruFiop（うる・ふぃおっぷ）です。&lt;/p&gt;
 &lt;p&gt;このブログにお越しいただきありがとうございます。&lt;/p&gt;
@@ -57,10 +57,10 @@
         </item>
         <item>
         <title>Search</title>
-        <link>https://urufiop.github.io/search/</link>
+        <link>https://urufiop.jp/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://urufiop.github.io/search/</guid>
+        <guid>https://urufiop.jp/search/</guid>
         <description></description>
         </item>
         
