@@ -7,360 +7,234 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-jp</language>
         <copyright>UruFiop</copyright>
-        <lastBuildDate>Tue, 11 Nov 2025 20:11:51 +0900</lastBuildDate><atom:link href="https://urufiop.jp/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Hugo &#43; GitHub Pagesでブログ作成 - Hugoの基本を知る</title>
-        <link>https://urufiop.jp/posts/hugo--github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90-hugo%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%82%92%E7%9F%A5%E3%82%8B/</link>
-        <pubDate>Tue, 11 Nov 2025 20:11:51 +0900</pubDate>
+        <lastBuildDate>Sun, 23 Nov 2025 23:10:04 +0900</lastBuildDate><atom:link href="https://urufiop.jp/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>今まで取得した資格のまとめと所感</title>
+        <link>https://urufiop.jp/posts/%E4%BB%8A%E3%81%BE%E3%81%A7%E5%8F%96%E5%BE%97%E3%81%97%E3%81%9F%E8%B3%87%E6%A0%BC%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A8%E6%89%80%E6%84%9F/</link>
+        <pubDate>Sun, 23 Nov 2025 23:10:04 +0900</pubDate>
         
-        <guid>https://urufiop.jp/posts/hugo--github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90-hugo%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%82%92%E7%9F%A5%E3%82%8B/</guid>
-        <description>&lt;h1 id=&#34;自分のブログを作りたい&#34;&gt;自分のブログを作りたい！
-&lt;/h1&gt;&lt;p&gt;自分のブログを作りたいと思った。&lt;br&gt;
-そう、エンジニア2年目に突入するにもかかわらず、自分のブログを持っていないことに気づいたのである。&lt;/p&gt;
-&lt;h2 id=&#34;使用する技術の選定&#34;&gt;使用する技術の選定
-&lt;/h2&gt;&lt;p&gt;ブログを作るとしても、使う技術は様々。&lt;br&gt;
-少し考えただけでも以下の選択肢がある。&lt;/p&gt;
+        <guid>https://urufiop.jp/posts/%E4%BB%8A%E3%81%BE%E3%81%A7%E5%8F%96%E5%BE%97%E3%81%97%E3%81%9F%E8%B3%87%E6%A0%BC%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A8%E6%89%80%E6%84%9F/</guid>
+        <description>&lt;h1 id=&#34;今まで取得した資格を整理してみる2025年版&#34;&gt;今まで取得した資格を整理してみる(2025年版)
+&lt;/h1&gt;&lt;p&gt;あまりポートフォリオが見えにくいインフラエンジニアという職業をしているので、&lt;br&gt;
+自分が持っている資格をまとめてみる。&lt;/p&gt;
+&lt;p&gt;今後、私が資格を取得する上で現状を整理する目的のため、多少雑な部分があるがご容赦いただきたい。&lt;/p&gt;
+&lt;h2 id=&#34;結論まとめ&#34;&gt;結論(まとめ)
+&lt;/h2&gt;&lt;p&gt;以下の資格を取得した。&lt;br&gt;
+(そこまで難しい資格を取っていないのは目を瞑ってほしい…頑張らなきゃ)&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;技術&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;感想&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;資格名&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;所感&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;HTML + CSS&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;ブログを作成するには大変か…？&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;基本情報技術者試験&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;科目Aがめんどい、科目Bは慣れ&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;ブログサービス(はてなブログなど)&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;せっかくブログを作るなら、ちょっと技術的なことをやりたい&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;情報セキュリティマネジメント試験&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;基本情報よりも簡単&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;WordPress&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;環境作りやサーバーの確保を考えるとめんどくさい&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;CCNA&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;癖があるけど難しいとは言えない&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;React&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Reactをガリガリ書くのはめんどくさい&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;LPIC Level 1&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;暗記がすべて&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Next.js&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;デファクトスタンダード感があるし、面白そう&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Python3エンジニア認定基礎試験&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;ほぼPython3のチュートリアル&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Astro&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;パフォーマンスが良く、しかも新しい&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Azure Fundamentals&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;公式チュートリアルだけで十分&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Hugo&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;比較的簡単にブログを作れそう&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;AWS Certified Cloud Practitioner&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;公式チュートリアルと問題集あれば余裕&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;AWS Certified Solutions Architect - Associate&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;ちゃんと難しいが、きちんとした参考書を読めばOK&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;流石にHTML + CSSは論外だし、ブログサービスも面白みがなさそう。&lt;br&gt;
-WordPressも最初がめんどくさそうだし、セキュリティ対策が大変だと聞くしなぁ…&lt;/p&gt;
-&lt;p&gt;ReactもNext.jsもAstroもNode.js系で、Node.jsには色々とトラウマを抱えているので、今回は &lt;strong&gt;Hugo&lt;/strong&gt; を使うことにした。&lt;/p&gt;
-&lt;h2 id=&#34;hugoをインストールする&#34;&gt;Hugoをインストールする
-&lt;/h2&gt;&lt;p&gt;さっそく私の友達、GeminiさんにHugoの試し方を聞いてみよう。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;Hugoのインストール
-まず、お使いのOSにHugoをインストールする必要があります。Hugoの公式サイトには、各OS（Windows、macOS、Linux）ごとのインストール方法が記載されています。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;まずはインストールが必要なようだ。&lt;br&gt;
-私はWinGet信者なので、WinGetを使用してインストールを行う。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:\&amp;gt;winget search hugo
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;名前            ID                    バージョン 一致          ソース
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---------------------------------------------------------------------
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Hugo            Hugo.Hugo             0.152.2                  winget
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Hugo (Deploy)   Hugo.Hugo.Deploy      0.150.0    Command: hugo winget
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Hugo (Extended) Hugo.Hugo.Extended    0.152.2                  winget
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;～ 中略 ～
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Hugoにもいろいろと種類があるようだが、ここは**Hugo (Extended)**をインストールしてみよう。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:\&amp;gt;winget install Hugo.Hugo.Extended
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;～ 中略 ～
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:\&amp;gt;hugo version
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo v0.152.2-6abdacad3f3fe944ea42177844469139e81feda6+extended windows/amd64 BuildDate=2025-10-24T15:31:49Z VendorInfo=gohugoio
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;無事、インストールができた。&lt;/p&gt;
-&lt;h2 id=&#34;サイトの作成&#34;&gt;サイトの作成
-&lt;/h2&gt;&lt;p&gt;Geminiさんの回答の続きを見ていこう。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;新しいサイトの作成
-Hugoがインストールできたら、コマンドで新しいブログサイトの雛形を作成します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Hugoではコマンドを一つ実行するだけで簡単にサイトを作れるようだ。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:\&amp;gt;hugo new site my-blog
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Congratulations! Your new Hugo site was created in C:\my-blog.
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:\&amp;gt;cd my-blog
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:\my-blog&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;うーん、すごい簡単。&lt;/p&gt;
-&lt;h2 id=&#34;テーマの追加&#34;&gt;テーマの追加
-&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;テーマの追加
-Hugoサイトのデザインはテーマによって決定されます。&lt;br&gt;
-①テーマを探す: Hugo Themesのウェブサイトなどで気に入ったテーマを見つけます。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Hugoはテーマというものが存在するらしい。&lt;br&gt;
-WordPress民にとっては馴染みのある概念だと思うが、要は&lt;strong&gt;ブログの外見&lt;/strong&gt;を簡単に設定できるテンプレートのようなものだ。&lt;/p&gt;
-&lt;p&gt;テーマについては、以下のサイトから調べることができる。&lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo Themes&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;その中から、自分が色々見てよいと思ったものをピックアップしてみた。&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;テーマ&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;感想&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/themes/hugo-papermod/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;PaperMod&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;とてもシンプル。技術系ブログに似合いそう&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/themes/hugo-theme-stack/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Stack&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;モダンで見栄えが良い。&lt;strong&gt;一番気に入った&lt;/strong&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/themes/blowfish/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Blowfish&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;ふぐがかわいい。デザイナーの人にいいかも&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/themes/hugo-profile/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo Profile&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;就活向け。ポートフォリオを紹介するのによさそう&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;各テーマは紹介ページのDemoボタンからデモページが見れるので、ぜひ活用されたし。&lt;br&gt;
-&lt;img src=&#34;https://urufiop.jp/images/my-first-post/Demo%e3%83%9c%e3%82%bf%e3%83%b3.png&#34;
+&lt;h2 id=&#34;基本情報技術者試験&#34;&gt;基本情報技術者試験
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ja.wikipedia.org/wiki/%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1%E6%8A%80%E8%A1%93%E8%80%85%E8%A9%A6%E9%A8%93&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;基本情報技術者試験 | Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;基本情報技術者試験（以下、FE試験）は、情報処理技術者試験（国家資格）の一つ。&lt;br&gt;
+情報処理技術者試験はレベル1～4まで設定されているが、FE試験はレベル2に分類される。&lt;/p&gt;
+&lt;p&gt;実は初めて取得した資格はFE試験で、エンジニアとして働こうと考えたときにこの資格を合格できるかで就職を判断した。&lt;br&gt;
+当時はフリーター（某2ndな中古買取店）として働いており、仕事と並行して取得。&lt;/p&gt;
+&lt;p&gt;参考書は超有名な&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/5miesvb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;キタミ式イラストIT塾&lt;/a&gt;（当時は令和04年版）を使い、3周したのち&lt;a class=&#34;link&#34; href=&#34;https://www.fe-siken.com/fekakomon.php&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;過去問道場&lt;/a&gt;を回した。&lt;br&gt;
+正直、参考書は3周する必要はなかったと思う。1,2周で十分だと思う。&lt;br&gt;
+過去問道場で分からなかった問題があったとしても、そもそも過去問道場の解説がとても分かりやすいので、キタミ式は全体像を把握する程度の使い方でよいと思う。&lt;/p&gt;
+&lt;h3 id=&#34;所感&#34;&gt;所感
+&lt;/h3&gt;&lt;p&gt;科目Aは知識が求められ、ほぼ暗記なので結構めんどくさかった。&lt;br&gt;
+科目Bはプログラミング経験者なら事前に勉強しなくてもよいと思う。（自分は勉強しなかった）&lt;/p&gt;
+&lt;p&gt;ITの知識を広く薄く学べたので、取得してよかったと思う。&lt;br&gt;
+仕事する上で「FE試験で学んだなぁ」みたいな瞬間もあるので、ちゃんと使える知識だと改めて振り返るとそう感じる。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://urufiop.jp/images/%e4%bb%8a%e3%81%be%e3%81%a7%e5%8f%96%e5%be%97%e3%81%97%e3%81%9f%e8%b3%87%e6%a0%bc%e3%81%ae%e6%89%80%e6%84%9f/FE%e8%a9%a6%e9%a8%93_%e7%b5%90%e6%9e%9c.png&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;Demoボタン&#34;
+		alt=&#34;FE試験の合格結果&#34;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;私は&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/themes/hugo-theme-stack/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Stack&lt;/a&gt;が一番気に入ったので、これを使用することにした。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;②テーマをダウンロード: サイトのディレクトリ (my-blog) 内に、テーマをGitのサブモジュールとして追加するのが一般的です。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;テーマのダウンロードも簡単で、先ほど作ったフォルダの中で以下のコマンドを実行するだけ。&lt;br&gt;
-なお、テーマの名前はGitHubの名前である。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:\my-blog&amp;gt;git init
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:\my-blog&amp;gt;git submodule add [テーマのリポジトリURL] themes/[テーマの名前]
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;テーマのリポジトリURLについては、テーマの紹介ページのDownloadを押すとGitHubに飛ぶので、&lt;br&gt;
-緑色のCodeボタンを押した後にコピーボタンを押すとURLがコピーできる。
-&lt;img src=&#34;https://urufiop.jp/images/my-first-post/Download%e3%83%9c%e3%82%bf%e3%83%b3.png&#34;
+&lt;h2 id=&#34;情報セキュリティマネジメント試験&#34;&gt;情報セキュリティマネジメント試験
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ja.wikipedia.org/wiki/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E8%A9%A6%E9%A8%93&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;情報セキュリティマネジメント試験 | Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;情報セキュリティマネジメント試験（以下、SG試験）は、情報処理技術者試験（国家資格）の一つ。&lt;br&gt;
+情報処理技術者試験はレベル1～4まで設定されているが、SG試験はレベル2に分類される。&lt;/p&gt;
+&lt;p&gt;ここ最近とった資格で、合格点は頂いているが合否は未発表である。&lt;br&gt;
+ただ、合格点さえ超えていればほぼ合格になるので、この記事に乗せた。&lt;/p&gt;
+&lt;p&gt;参考書はまたまた&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/j49TMYo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;キタミ式イラストIT塾&lt;/a&gt;（これは令和07年版）を使い、2周したのち&lt;a class=&#34;link&#34; href=&#34;https://www.sg-siken.com/sgkakomon.php&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;過去問道場&lt;/a&gt;を回した。&lt;br&gt;
+これは過去問よりも参考書をちゃんと読んだほうが分かりやすいし覚えやすいと思う。&lt;/p&gt;
+&lt;h3 id=&#34;所感-1&#34;&gt;所感
+&lt;/h3&gt;&lt;p&gt;科目Aと科目Bに分かれているが、正直そこまで内容は変わらない。&lt;br&gt;
+内容も似たり寄ったりな感じがしたので、範囲の広い基本情報技術者よりも簡単と感じた。&lt;/p&gt;
+&lt;p&gt;私は今、セキュリティの現場に従事しているのでほぼほぼ知識の再確認程度だったし、そもそもセキュリティは「ちゃんと情報を守ろうね？」が基本なので、それさえ心得て入れば特に難しいところは無いと思う。&lt;br&gt;
+セキュリティ初心者であれば為になる知識が詰まっているので、ぜひIT従事者やユーザー問わずみんなに取得してほしい資格だと思う。&lt;br&gt;
+（もしユーザー全員が取得したら仕事が減ってしまうが、セキュリティ事故が減ることは善いことなので是非ともそうあってほしい）&lt;/p&gt;
+&lt;p&gt;個人的にセキュリティは学べば学ぶほど楽しめる分野なので、みんなもセキュリティを学ぼう！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://urufiop.jp/images/%e4%bb%8a%e3%81%be%e3%81%a7%e5%8f%96%e5%be%97%e3%81%97%e3%81%9f%e8%b3%87%e6%a0%bc%e3%81%ae%e6%89%80%e6%84%9f/SG%e8%a9%a6%e9%a8%93_%e7%b5%90%e6%9e%9c.png&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;Downloadボタン&#34;
-	
-	
-&gt;
-&lt;img src=&#34;https://urufiop.jp/images/my-first-post/GitHub%e3%81%ae%e3%82%b3%e3%83%94%e3%83%bc%e3%83%9c%e3%82%bf%e3%83%b3.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;GitHubのコピーボタン&#34;
+		alt=&#34;SG試験の合格結果&#34;
 	
 	
 &gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;③テーマを設定: サイトの設定ファイル（通常は config.toml または hugo.toml）に、使用するテーマを指定します。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;先ほど作ったフォルダの中に&lt;code&gt;config.toml&lt;/code&gt;があると思うので、以下のように変更する。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;baseURL = &amp;#39;http://localhost:1313/&amp;#39; # 自分のサイトURL
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;languageCode = &amp;#39;ja-jp&amp;#39; # デフォルトはen-usだが、日本に変更
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title = &amp;#34;UruFiop&amp;#39;s Blog&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;theme = &amp;#39;テーマの名前&amp;#39; # 追加したテーマの名前に変更
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;記事の作成&#34;&gt;記事の作成
-&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;コンテンツ（記事）の作成&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;コンテンツの作成には以下のコマンドを使う。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new posts/my-first-post.md # 好きなファイル名にして良い(ex. saisyo.md)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;すると、&lt;code&gt;content/posts&lt;/code&gt;フォルダの中に&lt;code&gt;my-first-post.md&lt;/code&gt;が作成されていると思う。&lt;br&gt;
-これで記事は作成できた。簡単。&lt;/p&gt;
-&lt;p&gt;作成したファイルを開いてみる。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+++
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;date = &amp;#39;2025-11-11T22:42:11+09:00&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;draft = true # trueだと記事を公開しない、公開するときはfalseにする
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title = &amp;#39;My First Post&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+++
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;記事は&lt;code&gt;+++&lt;/code&gt;の下にMarkdown形式で記載していく。&lt;br&gt;
-Markdown形式については&lt;a class=&#34;link&#34; href=&#34;https://qiita.com/Qiita/items/c686397e4a0f4f11683d&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;こちらの記事&lt;/a&gt;を参照するとよい。&lt;/p&gt;
-&lt;p&gt;試しに、以下のように記載してみる。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+++
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;date = &amp;#39;2025-11-11T22:42:11+09:00&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;draft = true
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title = &amp;#39;My First Post&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+++
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# Hello
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;こんにちわ
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;ローカルで確認&#34;&gt;ローカルで確認
-&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;ローカルでのプレビュー
-記事を書き進める際は、ローカルサーバーを起動し、ブラウザでリアルタイムにサイトを確認できます。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;以下のコマンドを使うと、ローカルで自分のブログを確認できる。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:\my-blog&amp;gt;hugo server -D # -Dはドラフト記事(まだ公開していない記事)も確認できる引数
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;実行したら、&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://localhost:1313/&lt;/a&gt;から自分のブログを確認できる。&lt;br&gt;
-もちろん、ローカルで確認しているだけなので、ネット上に公開されているわけではない。&lt;/p&gt;
-&lt;h2 id=&#34;サイトのデプロイ公開用ファイルの作成&#34;&gt;サイトのデプロイ(公開用ファイルの作成)
-&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;サイトの公開（デプロイ）
-コンテンツが完成したら、サイトを公開するための静的ファイルを生成します。
-①ドラフト設定を解除: 公開したいすべての記事のフロントマターで draft: true を draft: false に変更します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;記事ファイルの中の&lt;code&gt;draft = true&lt;/code&gt;を&lt;code&gt;draft = false&lt;/code&gt;にすると、その記事は公開状態になる。&lt;br&gt;
-自慢の記事が公開されないのは悲しいよね…&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;②静的ファイルを生成&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;以下のコマンドを実行すると&lt;code&gt;public&lt;/code&gt;フォルダの中に公開用のファイルが作成される。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:\my-blog&amp;gt;hugo
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;あとは、&lt;code&gt;public&lt;/code&gt;フォルダの中をGitHub PagesやNetlifyなどのホスティングサービスにアップロードすれば、自分のブログが公開できる。&lt;/p&gt;
-&lt;h2 id=&#34;まとめ&#34;&gt;まとめ
-&lt;/h2&gt;&lt;p&gt;本記事ではHugoを使って、公開用ファイルの作成まで行った。&lt;br&gt;
-ただ、これだと日本語のフォントが不自然だったり、いまいち没個性的なサイトになってしまう。&lt;/p&gt;
-&lt;p&gt;次の記事では、自分のサイトに少し個性を入れるべく、設定を見直していく。&lt;/p&gt;
-&lt;p&gt;記事の公開を待たれよ。&lt;/p&gt;
+&lt;h2 id=&#34;ccna&#34;&gt;CCNA
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ja.wikipedia.org/wiki/Cisco_Certified_Network_Associate&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cisco Certified Network Associate | Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cisco Certified Network Associate（以下、CCNA）は、大手ネットワーク機器ベンダーの&lt;a class=&#34;link&#34; href=&#34;https://ja.wikipedia.org/wiki/%E3%82%B7%E3%82%B9%E3%82%B3%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%BA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cisco Systems&lt;/a&gt;が主催しているベンター資格の一つ。&lt;br&gt;
+資格の難易度は簡単な順から、Entry、Associate、Professional、Expertとなっているが、CCNAはAssociateに分類される。&lt;/p&gt;
+&lt;p&gt;初めて入った会社で「1か月で取得しろ」と言われたので取得。&lt;br&gt;
+ネットワーク系エンジニアの登竜門的な存在の資格で、ネットワークの基礎が広く学べる。&lt;br&gt;
+その分、範囲が広く、また馴染みがない人からするとちんぷんかんぷんな内容であり、初学者からしたらとても難易度が高い。&lt;/p&gt;
+&lt;p&gt;参考書は&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/d54zwEB&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;シスコ技術者認定教科書&lt;/a&gt;（当時は第1版）と&lt;a class=&#34;link&#34; href=&#34;https://www.infraexpert.com/info/ccnaz7.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CCNAイージス&lt;/a&gt;（個人サイト）を使った。&lt;br&gt;
+シスコ技術者認定教科書はびっくりするぐらいページ数が多く内容も濃密のため、正直読む気が失せるのだが、さっと1周して全体を薄く捉えると読みやすくなる。&lt;br&gt;
+CCNAイージスはほぼ辞書みたいに使うと良い。全部読もうとするとかなりしんどいと思う。（どの参考書よりも内容が詰まっているため）&lt;/p&gt;
+&lt;h3 id=&#34;所感-2&#34;&gt;所感
+&lt;/h3&gt;&lt;p&gt;英語から機械翻訳で日本語にしているので、試験はとっっっっても癖が強い。&lt;br&gt;
+しかもシミュレーション問題も表記揺れで何が正解なのかわかりづらいので、如何に意図をくみ取れるかが大切。&lt;br&gt;
+また、ルーティング問題が多く出るので、ルーティングテーブルの読み取りはちゃんとできるようにしたほうが良い。&lt;br&gt;
+（ルーティングプロトコルもRIPv2、OSPF、BGP、EIGRPは分かったほうが良い…と書きたいが、今の試験はOSPF一本とのこと。まぁOSPFはデファクトスタンダード感あるが、BGPは普通に現役と思うので扱ったほうが良いと思うが…）&lt;/p&gt;
+&lt;p&gt;Cisco Systems独自のプロトコルや製品の宣伝を兼ねている（気がする）ので、Cisco関連の知識が多く学べる。&lt;br&gt;
+また、ネットワーク技術についても基礎から学べるので、資格は取らずとも勉強したほうが良いと思う。&lt;br&gt;
+どういった仕組みで通信が行われているか分かり、また通信系のトラブルシューティングもやりやすくなる。（自宅のネット環境のトラブルシューティングもね）&lt;/p&gt;
+&lt;p&gt;スコアは&lt;code&gt;900&lt;/code&gt;に届かず、&lt;code&gt;890&lt;/code&gt;ぐらいだった気がする。&lt;/p&gt;
+&lt;h2 id=&#34;lpic-level-1&#34;&gt;LPIC Level 1
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ja.wikipedia.org/wiki/Linux_Professional_Institute_Certification&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Linux Professional Institute Certification | Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Linux Professional Institute Certification Level 1（以下、LPIC Level 1）は、&lt;a class=&#34;link&#34; href=&#34;https://ja.wikipedia.org/wiki/Linux_Professional_Institute&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Linux Professional Institute&lt;/a&gt;による資格の一つ。&lt;br&gt;
+レベル1～3まで設定されており、LPIC Level 1はその名の通りレベル1に分類される。&lt;/p&gt;
+&lt;p&gt;LPICは特殊な資格で、試験が二つに分かれており（101と102）、どちらも取得して初めてLPIC Level 1を合格したことになる。&lt;/p&gt;
+&lt;p&gt;参考書は使わず、問題集の&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/0e55GIX&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Linux教科書 LPICレベル1 スピードマスター問題集&lt;/a&gt;を使った。&lt;br&gt;
+この本を4周すれば良い。&lt;/p&gt;
+&lt;h3 id=&#34;所感-3&#34;&gt;所感
+&lt;/h3&gt;&lt;p&gt;Linux（主にサーバー管理）の知識が学べる資格…ではあるのだが、Linuxを使う業務に従事したい（従事している）人以外はそこまで必要ではない。&lt;br&gt;
+というのも、自分が受験したときは昔のコマンド（例えばlprとかlpqとか）も覚える必要があり、しかも自分の環境で動かすのも難しいため、実感が湧きにくい。（特にGUI関係）&lt;br&gt;
+そもそもサーバー管理で使うコマンドは環境（DebianとかRHBLとか）とか使うソフトとかによっても異なるので、わざわざ覚える必要があるのかなぁと思う。&lt;/p&gt;
+&lt;p&gt;ただ、Linuxでどういうことができるか分からない人は学んでみても良いかもしれない。&lt;br&gt;
+そもそも資格取得難易度がとても低いので、資格何も持っていない人は挑戦してみても良いと思う。（なぜ難易度が低いのか、すべてはスピマスが教えてくれる）&lt;/p&gt;
+&lt;p&gt;スコアは101が&lt;code&gt;740&lt;/code&gt;、102が&lt;code&gt;710&lt;/code&gt;で合格した。&lt;/p&gt;
+&lt;h2 id=&#34;python3エンジニア認定基礎試験&#34;&gt;Python3エンジニア認定基礎試験
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cbt.odyssey-com.co.jp/pythonic-exam/python3basic.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Python3エンジニア認定基礎試験 | Odyssey CBT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Python3エンジニア認定基礎試験は、&lt;a class=&#34;link&#34; href=&#34;https://www.pythonic-exam.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;一般社団法人Pythonエンジニア育成推進協会&lt;/a&gt;による資格の一つ。&lt;br&gt;
+レベルは、基礎と応用が用意されており、本資格は基礎のほう。&lt;/p&gt;
+&lt;p&gt;参考書や問題集は特に使っていないが、初学者はPythonの&lt;a class=&#34;link&#34; href=&#34;https://docs.python.org/ja/3.9/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;公式ドキュメント&lt;/a&gt;のチュートリアルをやればよいと思う。&lt;/p&gt;
+&lt;h3 id=&#34;所感-4&#34;&gt;所感
+&lt;/h3&gt;&lt;p&gt;上述の公式ドキュメントを見ればわかるのだが、本資格の対象範囲は&lt;code&gt;Version 3.9&lt;/code&gt;であり、正直古い。（今はVersion 3.14で、3.15もそろそろ出るんじゃなかったかな）&lt;br&gt;
+そのため、この資格を取る必要はなく、またプログラマーは資格よりもポートフォリオが重視されるのでそちらを取ったほうが良いと思う。&lt;/p&gt;
+&lt;p&gt;難易度も正直高くなく、得られる知識もそこまでなので、この資格を取る必要はない気がする。&lt;br&gt;
+また、自動化目的だったとしても、職場でPythonが実行できる環境はほぼ無いし、研究や開発目的ならこの資格よりも公式のチュートリアルを読んで使うライブラリ・フレームワークの勉強をしたほうが良いだろう。&lt;/p&gt;
+&lt;p&gt;私も取れるから取った資格なので、皆さんはこの資格を取らずに「Pythonで何がしたいのか」目標を設定して公式チュートリアルを読んだほうが良いと思う。&lt;/p&gt;
+&lt;p&gt;スコアは&lt;code&gt;950&lt;/code&gt;で合格した。&lt;/p&gt;
+&lt;h2 id=&#34;azure-fundamentals&#34;&gt;Azure Fundamentals
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://learn.microsoft.com/ja-jp/credentials/certifications/azure-fundamentals/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Microsoft認定: Azure Fundamentals | Microsoft&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Azure Fundamentalsは、Big Techの一つである&lt;a class=&#34;link&#34; href=&#34;https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%BD%E3%83%95%E3%83%88&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Microsoft&lt;/a&gt;による資格の一つ。&lt;br&gt;
+資格の難易度は簡単な順から、Fundamentals、Associate、Expertに分かれており、本資格はFundamentalsに分類される。&lt;/p&gt;
+&lt;p&gt;Microsoftが提供しているクラウドサービス群の&lt;a class=&#34;link&#34; href=&#34;https://azure.microsoft.com/ja-jp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure&lt;/a&gt;に関する資格。&lt;/p&gt;
+&lt;p&gt;使用したのはMicrosoftが提供している&lt;a class=&#34;link&#34; href=&#34;https://learn.microsoft.com/ja-jp/training/courses/az-900t00&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;公式コース&lt;/a&gt;のみ。&lt;/p&gt;
+&lt;h3 id=&#34;所感-5&#34;&gt;所感
+&lt;/h3&gt;&lt;p&gt;Azureの主要サービスを広く浅く学べる。&lt;br&gt;
+主にクラウドコンピューティング（仮想サーバーでソフトとかを動かす）とクラウドストレージ（仮想ストレージにファイルとかを格納する）がメインだった気がする。&lt;br&gt;
+「クラウドとは何か？」という基礎的な部分も学べるので、ITインフラ系の人は学んでおいたほうが良いと思う。&lt;/p&gt;
+&lt;p&gt;自分は公式コースのみで学習したが、あまり分かりやすい文章でもないので、ちゃんとした参考書かUdemyを使ったほうが良いと思う。&lt;br&gt;
+そこまで難しい資格じゃないので、ちゃんと勉強していれば取得できる。&lt;/p&gt;
+&lt;p&gt;スコアは&lt;code&gt;826&lt;/code&gt;で合格した。&lt;/p&gt;
+&lt;h2 id=&#34;aws-certified-cloud-practitioner&#34;&gt;AWS Certified Cloud Practitioner
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://aws.amazon.com/jp/certification/certified-cloud-practitioner/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AWS Certified Cloud Practitioner | AWS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;AWS Certified Cloud Practitioner（以下、AWS CF）は、Big Techの一つである&lt;a class=&#34;link&#34; href=&#34;https://ja.wikipedia.org/wiki/Amazon.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Amazon&lt;/a&gt;による資格の一つ。&lt;br&gt;
+資格の難易度は簡単な順から、Foundational、Associate、Professional、Specialtyに分かれており（ProfessionalとSpecialtyは同列ぐらい）、本資格はFoundationalに分類される。&lt;/p&gt;
+&lt;p&gt;Amazonが提供しているクラウドサービス群の&lt;a class=&#34;link&#34; href=&#34;https://aws.amazon.com/jp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AWS&lt;/a&gt;に関する資格。&lt;/p&gt;
+&lt;p&gt;使用したのはAWSが提供している&lt;a class=&#34;link&#34; href=&#34;https://aws.amazon.com/jp/training/learn-about/cloud-practitioner/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;公式トレーニング&lt;/a&gt;のみ。&lt;/p&gt;
+&lt;h3 id=&#34;所感-6&#34;&gt;所感
+&lt;/h3&gt;&lt;p&gt;AWSの主要サービスが広く浅く学べる。&lt;br&gt;
+Azure Fundamentalsと同様に、クラウドの基礎が学べ、またAWS関連の知識も学べる。&lt;br&gt;
+AWSはクラウドプラットフォームの中ではシェアNo.1なので、AWSとAzureどちらにするか迷っている人はAWSを学ぼう。&lt;/p&gt;
+&lt;p&gt;AWSの公式トレーニングを是非受けてほしいのだが、Azureの公式コースとは比べ物にならないぐらい質が良く、動画も日本語対応である。&lt;br&gt;
+（これが王者の余裕というやつなのか…）&lt;br&gt;
+クラウドについて何もわからないという人は、AWSの公式トレーニングはどの教材よりもおすすめだと言える。&lt;/p&gt;
+&lt;p&gt;最近はクラウドからオンプレに逆移行みたいな流れもちょくちょく見られるが、依然としてクラウドは需要があるので、オンプレしか触ったことがない人も学んでみると良い刺激になると思う。&lt;br&gt;
+しかも、クラウドはオンプレと違って設定がGUIで行え、かつ自分でホストしてハンズオンで学べるので、学習の難易度も低い。&lt;br&gt;
+ネットワークに関する知識も多少は学べるので、本当におすすめしたい。&lt;/p&gt;
+&lt;p&gt;スコアは&lt;code&gt;821&lt;/code&gt;で合格した。&lt;/p&gt;
+&lt;h2 id=&#34;aws-certified-solutions-architect---associate&#34;&gt;AWS Certified Solutions Architect - Associate
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AWS Certified Solutions Architect - Associate | AWS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;AWS Certified Cloud Practitioner（以下、AWS CF）は、Big Techの一つである&lt;a class=&#34;link&#34; href=&#34;https://ja.wikipedia.org/wiki/Amazon.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Amazon&lt;/a&gt;による資格の一つ。&lt;br&gt;
+資格の難易度は簡単な順から、Foundational、Associate、Professional、Specialtyに分かれており（ProfessionalとSpecialtyは同列ぐらい）、本資格はAssociateに分類される。&lt;/p&gt;
+&lt;p&gt;Amazonが提供しているクラウドサービス群の&lt;a class=&#34;link&#34; href=&#34;https://aws.amazon.com/jp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AWS&lt;/a&gt;に関する資格。&lt;/p&gt;
+&lt;p&gt;使用したのは&lt;a class=&#34;link&#34; href=&#34;https://kws-cloud-tech.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CloudTech&lt;/a&gt;のみ。&lt;/p&gt;
+&lt;h3 id=&#34;所感-7&#34;&gt;所感
+&lt;/h3&gt;&lt;p&gt;AWS CFを取得した後に挑戦したのだが、びっくりするぐらい難易度が上がっている。&lt;br&gt;
+甘く見ていると普通に不合格になる。&lt;/p&gt;
+&lt;p&gt;また、私はCloudTechを使ったのだが、カバーしきれていないのか初めて見たサービスが大量に出題された。&lt;br&gt;
+ちゃんと勉強していれば回答できる範囲なので、きちんとした参考書・問題集を使うか、Udemyを使うと良いだろう。&lt;/p&gt;
+&lt;p&gt;内容としてはAWS CFよりもサービスの範囲が広く、かつ深いところまで聞かれる。&lt;br&gt;
+また、Solutions Architectの名の通り、設計に関する知識も問われるので、サービス単体で覚えるのではなく、それぞれのサービスの繋がりを考えて知識をつける必要がある。&lt;br&gt;
+個人的には設計の知識がちゃんと学べたので、とても良い資格だと思う。&lt;/p&gt;
+&lt;p&gt;スコアは&lt;code&gt;750&lt;/code&gt;で合格した。（結構ギリギリ）&lt;/p&gt;
+&lt;h2 id=&#34;あとがき&#34;&gt;あとがき
+&lt;/h2&gt;&lt;p&gt;色々と資格を取ってきたなぁ…感慨深い。&lt;br&gt;
+そこまでレベルの高い資格を取得しているわけではないので、2026年はよりレベルの高い資格を取得してみたい。&lt;/p&gt;
+&lt;p&gt;来年から情報処理技術者試験の高度試験(応用情報やNW試験など)がCBTになるみたいなので、国家資格をちらほらを取得していきたい。&lt;br&gt;
+まずは応用情報かなぁ…午前1科目が免除になるし、知識の補強にもなるので。&lt;/p&gt;
+&lt;p&gt;ではでは、皆さん良き資格取得ライフを。&lt;/p&gt;
 </description>
         </item>
         <item>
