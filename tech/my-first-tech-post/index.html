@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="ja"> <head><meta name="viewport" content="width=device-width, initial-scale=1"><meta charset="utf-8"><title>初めての技術ブログ | UruFiopの部屋</title><meta name="description" content="Astro 6.x で技術ブログセクションを追加しました。"><meta name="keywords" content="UruFiop, ホームページ"><link rel="canonical" href="https://urufiop.jp/tech/my-first-tech-post/"><!-- OGP / Social Media --><meta property="og:site_name" content="UruFiopの部屋"><meta property="og:type" content="website"><meta property="og:url" content="https://urufiop.jp/tech/my-first-tech-post/"><meta property="og:title" content="初めての技術ブログ | UruFiopの部屋"><meta property="og:description" content="Astro 6.x で技術ブログセクションを追加しました。"><meta property="og:image" content="https://urufiop.jp/banner.png"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="初めての技術ブログ | UruFiopの部屋"><meta name="twitter:description" content="Astro 6.x で技術ブログセクションを追加しました。"><meta name="twitter:image" content="/favicon.png"><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-4Y9FDX4NXL"></script> <script>(function(){const id = "G-4Y9FDX4NXL";
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', id);
+})();</script><style>body{background-color:silver;color:#000;font-family:MS PGothic,sans-serif;margin:0;display:flex;height:100vh}aside{width:180px;border-right:3px double #000;padding:10px;background-color:#dcdcdc}.main-frame{flex:1;display:flex;flex-direction:column;padding:10px;overflow-y:auto}header{background-color:navy;color:#fff;padding:10px;text-align:center;border:2px outset #fff}.ticker{background-color:#fff;border:1px inset #808080;margin:5px 0;padding:2px;white-space:nowrap;overflow:hidden;flex-shrink:0}.ticker span{display:inline-block;padding-left:100%;animation:ticker 15s linear infinite}@keyframes ticker{0%{transform:translate(-100%)}to{transform:translate(0)}}main{background-color:#fff;border:2px inset #808080;padding:5%}main h2,main p,main hr,main ul,main table{margin-left:0;margin-right:auto}main ul,main table{text-align:left;display:table}footer{text-align:center;font-size:.8rem;margin-top:10px}.menu-link{display:block;margin-bottom:5px;color:#00e}#menu-toggle{display:none;background:none;border:none;color:#00e;text-decoration:underline;cursor:pointer;font-family:inherit;font-size:.8rem;padding:0}@media(max-width:600px){body{flex-direction:column;height:auto}aside{width:100%;border-right:none;border-bottom:3px double #000;box-sizing:border-box}.menu-header{display:flex;align-items:center;justify-content:space-between}.menu-header h3{margin:5px 0}#menu-toggle{display:inline-block}#menu-content{display:none;padding-top:10px;border-top:1px dashed #808080}#menu-content.is-open{display:block}#menu-toggle[aria-expanded=true] .open-text,#menu-toggle[aria-expanded=false] .close-text{display:none}.main-frame{padding:5px}}
+</style></head> <body> <aside> <div class="menu-header"> <h3>MENU</h3> <button id="menu-toggle" aria-expanded="false"> <span class="open-text">[ MENUを開く ]</span> <span class="close-text">[ MENUを閉じる ]</span> </button> </div> <nav id="menu-content"> <a class="menu-link" href="/">[ TOP ]</a> <a class="menu-link" href="/profile">[ PROFILE ]</a> <a class="menu-link" href="/diary">[ DIARY ]</a> <a class="menu-link" href="/tech">[ TECH BLOG ]</a> <a class="menu-link" href="/links">[ LINKS ]</a> </nav> </aside> <div class="main-frame"> <header> <h1>UruFiopの部屋</h1> </header> <div class="ticker"> <span>ようこそ！UruFiopの部屋へ！ のんびり更新中！</span> </div> <main>  <div class="tech-post"> <h2>初めての技術ブログ</h2> <p style="font-size: 0.8em; color: #666;">
+日付: 2026/4/19 <span style="margin-left: 10px;">
+カテゴリ: <a href="/tech/categories/お知らせ">お知らせ</a> </span> <span style="margin-left: 10px;">
+タグ: <span key="Astro"> <a href="/tech/tags/Astro">Astro</a> ,  </span><span key="Web開発"> <a href="/tech/tags/Web開発">Web開発</a>  </span> </span> </p> <hr> <article style="line-height: 1.6;"> <h2 id="はじめに">はじめに</h2>
+<p>技術ブログセクションを追加しました。ここでは、開発中に学んだことや便利なツールなどを紹介していきます。</p>
+<h3 id="astro-6x-の-content-collections">Astro 6.x の Content Collections</h3>
+<p>Astro 6.x からは <code>loader</code> API を使うことで、より柔軟にコンテンツを管理できるようになっています。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> tech</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> defineCollection</span><span style="color:#E1E4E8">({</span></span>
+<span class="line"><span style="color:#E1E4E8">  loader: </span><span style="color:#B392F0">glob</span><span style="color:#E1E4E8">({ pattern: </span><span style="color:#9ECBFF">"**/*.md"</span><span style="color:#E1E4E8">, base: </span><span style="color:#9ECBFF">"./src/content/tech"</span><span style="color:#E1E4E8"> }),</span></span>
+<span class="line"><span style="color:#E1E4E8">  schema: z.</span><span style="color:#B392F0">object</span><span style="color:#E1E4E8">({</span></span>
+<span class="line"><span style="color:#E1E4E8">    title: z.</span><span style="color:#B392F0">string</span><span style="color:#E1E4E8">(),</span></span>
+<span class="line"><span style="color:#E1E4E8">    pubDate: z.</span><span style="color:#B392F0">date</span><span style="color:#E1E4E8">(),</span></span>
+<span class="line"><span style="color:#E1E4E8">    description: z.</span><span style="color:#B392F0">string</span><span style="color:#E1E4E8">().</span><span style="color:#B392F0">optional</span><span style="color:#E1E4E8">(),</span></span>
+<span class="line"><span style="color:#E1E4E8">    tags: z.</span><span style="color:#B392F0">array</span><span style="color:#E1E4E8">(z.</span><span style="color:#B392F0">string</span><span style="color:#E1E4E8">()).</span><span style="color:#B392F0">optional</span><span style="color:#E1E4E8">(),</span></span>
+<span class="line"><span style="color:#E1E4E8">  }),</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
+<p>これからも更新をお楽しみに！</p> </article> <hr> <div style="margin-top: 20px;"> <a href="/tech">← 技術ブログ一覧へ戻る</a> </div> </div>  </main> <footer> <p>&copy; 2026 UruFiop. All rights reserved.</p> </footer> </div> <script>
+            // 90年代のDHTMLのようなシンプルな開閉制御
+            const toggle = document.getElementById("menu-toggle");
+            const content = document.getElementById("menu-content");
+
+            toggle.addEventListener("click", () => {
+                const isExpanded =
+                    toggle.getAttribute("aria-expanded") === "true";
+                toggle.setAttribute("aria-expanded", !isExpanded);
+                content.classList.toggle("is-open");
+            });
+        </script> </body> </html>
