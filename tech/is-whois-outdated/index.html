@@ -1,178 +1,65 @@
-<!DOCTYPE html><html lang="ja"><head><meta name="viewport" content="width=device-width, initial-scale=1"><meta charset="utf-8"><title>WHOISはもう古いのか？ | UruFiopの部屋</title><meta name="description" content="WHOISとRDAPの違いについて考える"><meta name="keywords" content="UruFiop, ホームページ"><link rel="canonical" href="https://urufiop.jp/tech/is-whois-outdated/"><!-- OGP / Social Media --><meta property="og:site_name" content="UruFiopの部屋"><meta property="og:type" content="website"><meta property="og:url" content="https://urufiop.jp/tech/is-whois-outdated/"><meta property="og:title" content="WHOISはもう古いのか？ | UruFiopの部屋"><meta property="og:description" content="WHOISとRDAPの違いについて考える"><meta property="og:image" content="https://urufiop.jp/banner.png"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="WHOISはもう古いのか？ | UruFiopの部屋"><meta name="twitter:description" content="WHOISとRDAPの違いについて考える"><meta name="twitter:image" content="/favicon.png"><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-4Y9FDX4NXL"></script><script>(function(){const id = "G-4Y9FDX4NXL";
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', id);
-})();</script><style>@font-face{font-family:aahub_light;src:url(/_astro/aahub_light.wIQV-6JU.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}body{color:#000;background-color:silver;height:100vh;margin:0;font-family:MS PGothic,sans-serif;display:flex}aside{background-color:#dcdcdc;border-right:3px double #000;flex-shrink:0;width:180px;padding:10px}.main-frame{flex-direction:column;flex:1;padding:10px;display:flex;overflow-y:auto}header{color:#fff;text-align:center;background-color:navy;border:2px outset #fff;padding:10px}.ticker{white-space:nowrap;background-color:#fff;border:1px inset gray;flex-shrink:0;margin:5px 0;padding:2px;overflow:hidden}.ticker span{padding-left:100%;animation:15s linear infinite ticker;display:inline-block}@keyframes ticker{0%{transform:translate(-100%)}to{transform:translate(0)}}main{background-color:#fff;border:2px inset gray;padding:5%}main h2,main p,main hr,main ul,main table{margin-left:0;margin-right:auto}main ul{text-align:left;display:table}pre{text-align:center;background-color:#f0f0f0;border:1px inset gray;padding:10px;font-family:aahub_light,MS PGothic,sans-serif;font-size:1rem;line-height:1;overflow-x:auto}footer{text-align:center;margin-top:10px;font-size:.8rem}.menu-link{color:#00e;margin-bottom:5px;display:block}#menu-toggle{color:#00e;cursor:pointer;background:0 0;border:none;padding:0;font-family:inherit;font-size:.8rem;text-decoration:underline;display:none}@media (width<=600px){body{flex-direction:column;height:auto}aside{box-sizing:border-box;border-bottom:3px double #000;border-right:none;width:100%}.menu-header{justify-content:space-between;align-items:center;display:flex}#menu-toggle{display:inline-block}#menu-content{border-top:1px dashed gray;padding-top:10px;display:none}#menu-content.is-open{display:block}#menu-toggle[aria-expanded=true] .open-text,#menu-toggle[aria-expanded=false] .close-text{display:none}.main-frame{padding:5px}pre{padding:5px;font-size:.6rem}}article{line-height:1.6}article h2{border-left:5px solid navy;margin-top:2rem;padding-left:10px}article h3{border-bottom:2px solid gray;margin-top:1.5rem}article table{border-collapse:collapse;text-align:left;border:1px solid #000;width:100%;margin-bottom:1rem}article th,article td{border:1px solid gray;padding:8px}article th{text-align:center;background-color:#dcdcdc;font-weight:700}article tr:nth-child(2n){background-color:#f9f9f9}article pre{text-align:left;background-color:#f0f0f0;border:1px inset gray;padding:10px;font-family:Consolas,Monaco,monospace;font-size:1rem;line-height:1.4;overflow-x:auto}@media (width<=600px){article{overflow-x:visible}article table{-webkit-overflow-scrolling:touch;overflow-x:auto;border-collapse:collapse!important;width:100%!important;display:block!important}article tr{display:table-row!important}article th,article td{white-space:nowrap;font-size:.85rem;padding:4px 8px!important;display:table-cell!important}article pre{font-size:.8rem}}
-</style></head><body><aside><div class="menu-header"><h3>MENU</h3><button id="menu-toggle" aria-expanded="false"><span class="open-text">[ MENUを開く ]</span><span class="close-text">[ MENUを閉じる ]</span></button></div><nav id="menu-content"><a class="menu-link" href="/">[ TOP ]</a><a class="menu-link" href="/profile">[ PROFILE ]</a><a class="menu-link" href="/diary">[ DIARY ]</a><a class="menu-link" href="/tech">[ TECH BLOG ]</a><a class="menu-link" href="/tool">[ TOOL ]</a><a class="menu-link" href="/links">[ LINKS ]</a></nav></aside><div class="main-frame"><header><h1>UruFiopの部屋</h1></header><div class="ticker"><span>ようこそ！UruFiopの部屋へ！ のんびり更新中！</span></div><main><article class="tech-post"><div class="post-header"><h2>WHOISはもう古いのか？</h2><p style="font-size: 0.8em; color: #666;">日付: 2026/4/19<span style="margin-left: 10px;">カテゴリ: <a href="/tech/categories/技術メモ">技術メモ</a></span><span style="margin-left: 10px;">タグ: <span><a href="/tech/tags/調査">調査</a>, </span><span><a href="/tech/tags/プロトコル">プロトコル</a></span></span></p><hr></div><div style="line-height: 1.6;"><h2 id="whoisはもう古い">WHOISはもう古い？</h2>
-<p>IPやドメインの情報を確認するために、WHOISを利用している人は多いと思うが、 <br>
-どうやらWHOISの後継となる規格が登場したみたいなので、色々と調べてみる。</p>
-<h2 id="前提whoisとは">前提：WHOISとは</h2>
-<p>参考：<a href="https://ja.wikipedia.org/wiki/WHOIS">WHOIS - Wikipedia</a></p>
-<p>詳しくは上記Wikipediaを参照してほしいが、 <br>
-端的に言えば、「IPアドレスやドメイン名を所持している人を確認するためのプロトコル」である。</p>
-<p>例えば、私のサイトをWHOISにかけると以下の情報を得ることができる。</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>Domain Information:</span></span>
-<span class="line"><span>[Domain Name]                   URUFIOP.JP</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>[Registrant]                    (Not displayed by registrant's request)</span></span>
-<span class="line"><span>                                For details -> https://jprs.jp/about/dom-rule/whois-concealment/ (only in Japanese)</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>[Name Server]                   01.dnsv.jp</span></span>
-<span class="line"><span>[Name Server]                   02.dnsv.jp</span></span>
-<span class="line"><span>[Name Server]                   03.dnsv.jp</span></span>
-<span class="line"><span>[Name Server]                   04.dnsv.jp</span></span>
-<span class="line"><span>[Signing Key]                   </span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>[Created on]                    2025/11/17</span></span>
-<span class="line"><span>[Expires on]                    2026/11/30</span></span>
-<span class="line"><span>[Status]                        Active</span></span>
-<span class="line"><span>[Last Updated]                  2026/04/15 22:42:32 (JST)</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>Contact Information:</span></span>
-<span class="line"><span>[Name]                          Whois Privacy Protection Service by onamae.com</span></span>
-<span class="line"><span>[Email]                         email@whoisprotectservice.com</span></span>
-<span class="line"><span>[Web Page]                       </span></span>
-<span class="line"><span>[Postal code]                    </span></span>
-<span class="line"><span>[Postal Address]                 </span></span>
-<span class="line"><span>[Phone]                         +81.354562560</span></span>
-<span class="line"><span>[Fax]                           </span></span></code></pre>
-<p>引用：<a href="https://www.whois.com/whois/urufiop.jp">Whois urufiop.jp</a></p>
-<p>上記の情報から、私のサイトは<a href="https://www.onamae.com/">お名前.com</a>を利用しているとわかる。 <br>
-ただし、登録者の氏名やその他情報については、「Whois Privacy Protection Service」で秘匿されている。</p>
-<p>Google(google.co.jp)をWHOISにかけてみる。</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>Domain Information:</span></span>
-<span class="line"><span>a. [Domain Name]                GOOGLE.CO.JP</span></span>
-<span class="line"><span>g. [Organization]               Google Japan G.K.</span></span>
-<span class="line"><span>l. [Organization Type]          GK</span></span>
-<span class="line"><span>m. [Administrative Contact]     YN47525JP</span></span>
-<span class="line"><span>n. [Technical Contact]          SH36113JP</span></span>
-<span class="line"><span>p. [Name Server]                ns1.google.com</span></span>
-<span class="line"><span>p. [Name Server]                ns2.google.com</span></span>
-<span class="line"><span>p. [Name Server]                ns3.google.com</span></span>
-<span class="line"><span>p. [Name Server]                ns4.google.com</span></span>
-<span class="line"><span>s. [Signing Key]                </span></span>
-<span class="line"><span>[State]                         Connected (2027/03/31)</span></span>
-<span class="line"><span>[Lock Status]                   AgentChangeLocked</span></span>
-<span class="line"><span>[Registered Date]               2001/03/22</span></span>
-<span class="line"><span>[Connected Date]                2001/03/22</span></span>
-<span class="line"><span>[Last Update]                   2026/04/01 01:02:00 (JST)</span></span>
-<span class="line"><span>Contact Information:</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>(省略)</span></span></code></pre>
-<p>上記情報から、該当ドメインはGoogle Japan G.K.が所有していることがわかる。</p>
-<p>個人所有のドメインは基本的に個人情報は秘匿されているが、 <br>
-企業所有のドメインでは、逆に企業が保有しているものと分かるように企業名等を公開しているケースが多い。</p>
-<h2 id="rdapregistration-data-access-protocolとは">RDAP(Registration Data Access Protocol)とは</h2>
-<p>前述のWHOISを色々試してみると、ドメインごとに表示形式が異なることがわかると思う。 <br>
-例えば、「google.com」と「google.co.jp」ではWHOISの結果がまるで違う。 <br>
-これはWHOISの規格上、出力形式がきちんと定義されていないために発生している問題である。</p>
-<p>この問題により、WHOISの出力結果を用いて処理を行う場合に、場合分けや例外処理の実装が非常にめんどくさくなる。 <br>
-JPドメインならこういう出力で、COMドメインならこう、例外はこう、、、考えるだけでも非常にめんどくさい。 <br>
-マンドクセ(’A`)</p>
-<p>また、ほかにも以下のような問題点が挙げられる。</p>
-<ul>
-<li>WHOISの通信が暗号化されていない可能性がある</li>
-<li>ASCIIベースなので、日本語等の文字に対応していない</li>
-<li>ドメインごとに適切なWHOISサーバーを選ぶ必要がある(JPドメインならJPNICなど)</li>
-<li>個人情報保護ルールと相性が悪い(全情報を全員に公開という設計思想のため、GDPRと非常に相性が悪い)</li>
-</ul>
-<p>これらWHOISの問題点を解決するべく、RDAPは生まれたのである。</p>
-<h2 id="whois-vs-rdap">WHOIS vs RDAP</h2>
-<p>WHOISとRDAPの違いを表にまとめた。</p>
-<table>
-<thead>
-<tr>
-<th>種類</th>
-<th style="text-align: left">WHOIS</th>
-<th style="text-align: left">RDAP</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>データ形式</td>
-<td style="text-align: left">非構造化テキスト</td>
-<td style="text-align: left">JSON(統一規格)</td>
-</tr>
-<tr>
-<td>セキュリティ</td>
-<td style="text-align: left">平文(暗号化なし)</td>
-<td style="text-align: left">HTTPSによる暗号化</td>
-</tr>
-<tr>
-<td>認証機能</td>
-<td style="text-align: left">なし</td>
-<td style="text-align: left">あり(権限で制御可能)</td>
-</tr>
-<tr>
-<td>多言語対応</td>
-<td style="text-align: left">ASCII(英語と一部記号のみ)</td>
-<td style="text-align: left">UTF-8(多言語対応)</td>
-</tr>
-<tr>
-<td>エラー処理</td>
-<td style="text-align: left">不透明(テキストで表示)</td>
-<td style="text-align: left">HTTPエラーコードで表現</td>
-</tr>
-</tbody>
-</table>
-<p>こう見るとRDAPが優位に見えるが、実際のところよく使うのはWHOISのほうである。 <br>
-なぜなら、RDAPは見づらいから。。。</p>
-<h2 id="実際にrdapを使ってみる">実際にRDAPを使ってみる</h2>
-<p>参考：<a href="https://jprs.jp/registrar/info/rdap/rdap-guide.html">JPRS RDAP ご利用ガイド</a></p>
-<p>上記記事を参考に、「google.co.jp」をRDAPに問い合わせてみる。</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="powershell"><code><span class="line"><span style="color:#F97583">></span><span style="color:#79B8FF"> Invoke-RestMethod</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8">Method Get </span><span style="color:#F97583">-</span><span style="color:#E1E4E8">Uri </span><span style="color:#9ECBFF">"https://rdap.gtld.jprs.jp/rdap/domain/google.co.jp"</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#79B8FF">Invoke-RestMethod</span><span style="color:#E1E4E8">: {</span></span>
-<span class="line"><span style="color:#9ECBFF">  "rdapConformance"</span><span style="color:#E1E4E8"> : [</span></span>
-<span class="line"><span style="color:#9ECBFF">    "icann_rdap_response_profile_1"</span><span style="color:#F97583">,</span></span>
-<span class="line"><span style="color:#9ECBFF">    "icann_rdap_technical_implementation_guide_1"</span><span style="color:#F97583">,</span></span>
-<span class="line"><span style="color:#9ECBFF">    "rdap_level_0"</span></span>
-<span class="line"><span style="color:#E1E4E8">  ]</span><span style="color:#F97583">,</span></span>
-<span class="line"><span style="color:#9ECBFF">  "notices"</span><span style="color:#E1E4E8"> : [ {</span></span>
-<span class="line"><span style="color:#9ECBFF">    "title"</span><span style="color:#E1E4E8"> : </span><span style="color:#9ECBFF">"Terms of Use"</span><span style="color:#F97583">,</span></span>
-<span class="line"><span style="color:#9ECBFF">    "description"</span><span style="color:#E1E4E8"> : [</span><span style="color:#9ECBFF">"JPRS RDAP Terms of Use"</span><span style="color:#E1E4E8">]</span><span style="color:#F97583">,</span></span>
-<span class="line"><span style="color:#9ECBFF">    "links"</span><span style="color:#E1E4E8"> : [ {</span></span>
-<span class="line"><span style="color:#9ECBFF">      "value"</span><span style="color:#E1E4E8"> : </span><span style="color:#9ECBFF">"https://rdap.gtld.jprs.jp/rdap/domain/google.co.jp"</span><span style="color:#F97583">,</span></span>
-<span class="line"><span style="color:#9ECBFF">      "rel"</span><span style="color:#E1E4E8"> : </span><span style="color:#9ECBFF">"terms-of-service"</span><span style="color:#F97583">,</span></span>
-<span class="line"><span style="color:#9ECBFF">      "type"</span><span style="color:#E1E4E8"> : </span><span style="color:#9ECBFF">"text/html"</span><span style="color:#F97583">,</span></span>
-<span class="line"><span style="color:#9ECBFF">      "href"</span><span style="color:#E1E4E8"> : </span><span style="color:#9ECBFF">"https://www.rdap.gtld.jprs.jp/docs/terms_of_use.html"</span></span>
-<span class="line"><span style="color:#E1E4E8">    } ]</span></span>
-<span class="line"><span style="color:#E1E4E8">  } ]</span><span style="color:#F97583">,</span></span>
-<span class="line"><span style="color:#9ECBFF">  "lang"</span><span style="color:#E1E4E8"> : </span><span style="color:#9ECBFF">"en"</span><span style="color:#F97583">,</span></span>
-<span class="line"><span style="color:#9ECBFF">  "errorCode"</span><span style="color:#E1E4E8"> : </span><span style="color:#79B8FF">404</span><span style="color:#F97583">,</span></span>
-<span class="line"><span style="color:#9ECBFF">  "title"</span><span style="color:#E1E4E8"> : </span><span style="color:#9ECBFF">"Not Found"</span><span style="color:#F97583">,</span></span>
-<span class="line"><span style="color:#9ECBFF">  "description"</span><span style="color:#E1E4E8"> : [ </span><span style="color:#9ECBFF">"No data found for the lookup/search URL."</span><span style="color:#E1E4E8"> ]</span></span>
-<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
-<p>…あれ？ <br>
-この後、色々調べてみたが、よくわからず。 <br>
-そのうち使い方についてはより調べてみる。</p>
-<h2 id="総括">総括</h2>
-<p>RDAPは夢がある技術ではあるものの、正直使う機会が多いかというと微妙。</p>
-<p>WHOISは歴史がある分、情報も多く出回っており、かつテキスト形式なので人間としては見やすい。 <br>
-RDAPは確かに機械で見る分には見やすいのかもしれないが、ぱっと情報を閲覧したい場合には使えない。</p>
-<p>また、RDAPはそこまで周知されているわけでもなく、紹介記事もびっくりするほど少ない。</p>
-<p>個人的には、まだWHOISを使い続けることになりそうだ。 <br>
-新規格なので今後に期待したいが、そもそもWHOISかけて情報調べたいというのは随分ニッチだと思うので、 <br>
-この先10年はWHOISが優勢な気がする。。。</p>
-</div><hr><div style="margin-top: 20px;"><a href="/tech">← 技術ブログ一覧へ戻る</a></div></article></main><footer><p>&copy; 2026 UruFiop. All rights reserved.</p></footer></div><script>
-            // 90年代のDHTMLのようなシンプルな開閉制御
-            const toggle = document.getElementById("menu-toggle");
-            const content = document.getElementById("menu-content");
-
-            toggle.addEventListener("click", () => {
-                const isExpanded =
-                    toggle.getAttribute("aria-expanded") === "true";
-                toggle.setAttribute("aria-expanded", !isExpanded);
-                content.classList.toggle("is-open");
-            });
-
-            // 外部リンクを新しいタブで開く (Markdown記事内のみ対象)
-            document.querySelectorAll('article a[href^="http"]').forEach(link => {
-                if (!link.href.includes(window.location.hostname)) {
-                    link.setAttribute('target', '_blank');
-                    link.setAttribute('rel', 'noopener noreferrer');
-                }
-            });
-        </script></body></html>
+<!DOCTYPE html><html lang=ja><head><meta content="width=device-width,initial-scale=1" name=viewport><meta charset=utf-8><title>WHOISはもう古いのか？ | UruFiopの部屋</title><meta content=WHOISとRDAPの違いについて考える name=description><meta content="UruFiop, ホームページ" name=keywords><link href=https://urufiop.jp/tech/is-whois-outdated/ rel=canonical><meta content=UruFiopの部屋 property=og:site_name><meta content=website property=og:type><meta content=https://urufiop.jp/tech/is-whois-outdated/ property=og:url><meta content="WHOISはもう古いのか？ | UruFiopの部屋" property=og:title><meta content=WHOISとRDAPの違いについて考える property=og:description><meta content=https://urufiop.jp/banner.png property=og:image><meta content=summary_large_image name=twitter:card><meta content="WHOISはもう古いのか？ | UruFiopの部屋" name=twitter:title><meta content=WHOISとRDAPの違いについて考える name=twitter:description><meta content=/favicon.png name=twitter:image><script async src="https://www.googletagmanager.com/gtag/js?id=G-4Y9FDX4NXL"></script><script>!function(){function a(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],a("js",new Date),a("config","G-4Y9FDX4NXL")}()</script><style>@font-face{font-family:aahub_light;src:url(/_astro/aahub_light.wIQV-6JU.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}body{color:#000;background-color:silver;height:100vh;margin:0;font-family:MS PGothic,sans-serif;display:flex}aside{background-color:#dcdcdc;border-right:3px double #000;flex-shrink:0;width:180px;padding:10px}.main-frame{flex-direction:column;flex:1;padding:10px;display:flex;overflow-y:auto}header{color:#fff;text-align:center;background-color:navy;border:2px outset #fff;padding:10px}.ticker{white-space:nowrap;background-color:#fff;border:1px inset gray;flex-shrink:0;margin:5px 0;padding:2px;overflow:hidden}.ticker span{padding-left:100%;animation:15s linear infinite ticker;display:inline-block}@keyframes ticker{0%{transform:translate(-100%)}to{transform:translate(0)}}main{background-color:#fff;border:2px inset gray;padding:5%}main h2,main hr,main p,main table,main ul{margin-left:0;margin-right:auto}main ul{text-align:left;display:table}pre{text-align:center;background-color:#f0f0f0;border:1px inset gray;padding:10px;font-family:aahub_light,MS PGothic,sans-serif;font-size:1rem;line-height:1;overflow-x:auto}footer{text-align:center;margin-top:10px;font-size:.8rem}.menu-link{color:#00e;margin-bottom:5px;display:block}#menu-toggle{color:#00e;cursor:pointer;background:0 0;border:none;padding:0;font-family:inherit;font-size:.8rem;text-decoration:underline;display:none}@media (width<=600px){body{flex-direction:column;height:auto}aside{box-sizing:border-box;border-bottom:3px double #000;border-right:none;width:100%}.menu-header{justify-content:space-between;align-items:center;display:flex}#menu-toggle{display:inline-block}#menu-content{border-top:1px dashed gray;padding-top:10px;display:none}#menu-content.is-open{display:block}#menu-toggle[aria-expanded=false] .close-text,#menu-toggle[aria-expanded=true] .open-text{display:none}.main-frame{padding:5px}pre{padding:5px;font-size:.6rem}}article{line-height:1.6}article h2{border-left:5px solid navy;margin-top:2rem;padding-left:10px}article h3{border-bottom:2px solid gray;margin-top:1.5rem}article table{border-collapse:collapse;text-align:left;border:1px solid #000;width:100%;margin-bottom:1rem}article td,article th{border:1px solid gray;padding:8px}article th{text-align:center;background-color:#dcdcdc;font-weight:700}article tr:nth-child(2n){background-color:#f9f9f9}article pre{text-align:left;background-color:#f0f0f0;border:1px inset gray;padding:10px;font-family:Consolas,Monaco,monospace;font-size:1rem;line-height:1.4;overflow-x:auto}@media (width<=600px){article{overflow-x:visible}article table{-webkit-overflow-scrolling:touch;overflow-x:auto;border-collapse:collapse!important;width:100%!important;display:block!important}article tr{display:table-row!important}article td,article th{white-space:nowrap;font-size:.85rem;padding:4px 8px!important;display:table-cell!important}article pre{font-size:.8rem}}</style></head><body><aside><div class=menu-header><h3>MENU</h3><button aria-expanded=false id=menu-toggle><span class=open-text>[ MENUを開く ]</span><span class=close-text>[ MENUを閉じる ]</span></button></div><nav id=menu-content><a href=/ class=menu-link>[ TOP ]</a><a href=/profile class=menu-link>[ PROFILE ]</a><a href=/diary class=menu-link>[ DIARY ]</a><a href=/tech class=menu-link>[ TECH BLOG ]</a><a href=/tool class=menu-link>[ TOOL ]</a><a href=/links class=menu-link>[ LINKS ]</a></nav></aside><div class=main-frame><header><h1>UruFiopの部屋</h1></header><div class=ticker><span>ようこそ！UruFiopの部屋へ！ のんびり更新中！</span></div><main><article class=tech-post><div class=post-header><h2>WHOISはもう古いのか？</h2><p style=font-size:.8em;color:#666>日付: 2026/4/19<span style=margin-left:10px>カテゴリ: <a href=/tech/categories/技術メモ>技術メモ</a></span><span style=margin-left:10px>タグ: <span><a href=/tech/tags/調査>調査</a>, </span><span><a href=/tech/tags/プロトコル>プロトコル</a></span></span></p><hr></div><div style=line-height:1.6><h2 id=whoisはもう古い>WHOISはもう古い？</h2><p>IPやドメインの情報を確認するために、WHOISを利用している人は多いと思うが、<br>どうやらWHOISの後継となる規格が登場したみたいなので、色々と調べてみる。</p><h2 id=前提whoisとは>前提：WHOISとは</h2><p>参考：<a href=https://ja.wikipedia.org/wiki/WHOIS>WHOIS - Wikipedia</a></p><p>詳しくは上記Wikipediaを参照してほしいが、<br>端的に言えば、「IPアドレスやドメイン名を所持している人を確認するためのプロトコル」である。</p><p>例えば、私のサイトをWHOISにかけると以下の情報を得ることができる。</p><pre class="astro-code github-dark" data-language=plaintext style=background-color:#24292e;color:#e1e4e8;overflow-x:auto tabindex=0><code><span class=line><span>Domain Information:</span></span>
+<span class=line><span>[Domain Name]                   URUFIOP.JP</span></span>
+<span class=line><span></span></span>
+<span class=line><span>[Registrant]                    (Not displayed by registrant's request)</span></span>
+<span class=line><span>                                For details -> https://jprs.jp/about/dom-rule/whois-concealment/ (only in Japanese)</span></span>
+<span class=line><span></span></span>
+<span class=line><span>[Name Server]                   01.dnsv.jp</span></span>
+<span class=line><span>[Name Server]                   02.dnsv.jp</span></span>
+<span class=line><span>[Name Server]                   03.dnsv.jp</span></span>
+<span class=line><span>[Name Server]                   04.dnsv.jp</span></span>
+<span class=line><span>[Signing Key]                   </span></span>
+<span class=line><span></span></span>
+<span class=line><span>[Created on]                    2025/11/17</span></span>
+<span class=line><span>[Expires on]                    2026/11/30</span></span>
+<span class=line><span>[Status]                        Active</span></span>
+<span class=line><span>[Last Updated]                  2026/04/15 22:42:32 (JST)</span></span>
+<span class=line><span></span></span>
+<span class=line><span>Contact Information:</span></span>
+<span class=line><span>[Name]                          Whois Privacy Protection Service by onamae.com</span></span>
+<span class=line><span>[Email]                         email@whoisprotectservice.com</span></span>
+<span class=line><span>[Web Page]                       </span></span>
+<span class=line><span>[Postal code]                    </span></span>
+<span class=line><span>[Postal Address]                 </span></span>
+<span class=line><span>[Phone]                         +81.354562560</span></span>
+<span class=line><span>[Fax]                           </span></span></code></pre><p>引用：<a href=https://www.whois.com/whois/urufiop.jp>Whois urufiop.jp</a></p><p>上記の情報から、私のサイトは<a href=https://www.onamae.com/ >お名前.com</a>を利用しているとわかる。<br>ただし、登録者の氏名やその他情報については、「Whois Privacy Protection Service」で秘匿されている。</p><p>Google(google.co.jp)をWHOISにかけてみる。</p><pre class="astro-code github-dark" data-language=plaintext style=background-color:#24292e;color:#e1e4e8;overflow-x:auto tabindex=0><code><span class=line><span>Domain Information:</span></span>
+<span class=line><span>a. [Domain Name]                GOOGLE.CO.JP</span></span>
+<span class=line><span>g. [Organization]               Google Japan G.K.</span></span>
+<span class=line><span>l. [Organization Type]          GK</span></span>
+<span class=line><span>m. [Administrative Contact]     YN47525JP</span></span>
+<span class=line><span>n. [Technical Contact]          SH36113JP</span></span>
+<span class=line><span>p. [Name Server]                ns1.google.com</span></span>
+<span class=line><span>p. [Name Server]                ns2.google.com</span></span>
+<span class=line><span>p. [Name Server]                ns3.google.com</span></span>
+<span class=line><span>p. [Name Server]                ns4.google.com</span></span>
+<span class=line><span>s. [Signing Key]                </span></span>
+<span class=line><span>[State]                         Connected (2027/03/31)</span></span>
+<span class=line><span>[Lock Status]                   AgentChangeLocked</span></span>
+<span class=line><span>[Registered Date]               2001/03/22</span></span>
+<span class=line><span>[Connected Date]                2001/03/22</span></span>
+<span class=line><span>[Last Update]                   2026/04/01 01:02:00 (JST)</span></span>
+<span class=line><span>Contact Information:</span></span>
+<span class=line><span></span></span>
+<span class=line><span>(省略)</span></span></code></pre><p>上記情報から、該当ドメインはGoogle Japan G.K.が所有していることがわかる。</p><p>個人所有のドメインは基本的に個人情報は秘匿されているが、<br>企業所有のドメインでは、逆に企業が保有しているものと分かるように企業名等を公開しているケースが多い。</p><h2 id=rdapregistration-data-access-protocolとは>RDAP(Registration Data Access Protocol)とは</h2><p>前述のWHOISを色々試してみると、ドメインごとに表示形式が異なることがわかると思う。<br>例えば、「google.com」と「google.co.jp」ではWHOISの結果がまるで違う。<br>これはWHOISの規格上、出力形式がきちんと定義されていないために発生している問題である。</p><p>この問題により、WHOISの出力結果を用いて処理を行う場合に、場合分けや例外処理の実装が非常にめんどくさくなる。<br>JPドメインならこういう出力で、COMドメインならこう、例外はこう、、、考えるだけでも非常にめんどくさい。<br>マンドクセ(’A`)</p><p>また、ほかにも以下のような問題点が挙げられる。</p><ul><li>WHOISの通信が暗号化されていない可能性がある</li><li>ASCIIベースなので、日本語等の文字に対応していない</li><li>ドメインごとに適切なWHOISサーバーを選ぶ必要がある(JPドメインならJPNICなど)</li><li>個人情報保護ルールと相性が悪い(全情報を全員に公開という設計思想のため、GDPRと非常に相性が悪い)</li></ul><p>これらWHOISの問題点を解決するべく、RDAPは生まれたのである。</p><h2 id=whois-vs-rdap>WHOIS vs RDAP</h2><p>WHOISとRDAPの違いを表にまとめた。</p><table><thead><tr><th>種類</th><th style=text-align:left>WHOIS</th><th style=text-align:left>RDAP</th></tr></thead><tbody><tr><td>データ形式</td><td style=text-align:left>非構造化テキスト</td><td style=text-align:left>JSON(統一規格)</td></tr><tr><td>セキュリティ</td><td style=text-align:left>平文(暗号化なし)</td><td style=text-align:left>HTTPSによる暗号化</td></tr><tr><td>認証機能</td><td style=text-align:left>なし</td><td style=text-align:left>あり(権限で制御可能)</td></tr><tr><td>多言語対応</td><td style=text-align:left>ASCII(英語と一部記号のみ)</td><td style=text-align:left>UTF-8(多言語対応)</td></tr><tr><td>エラー処理</td><td style=text-align:left>不透明(テキストで表示)</td><td style=text-align:left>HTTPエラーコードで表現</td></tr></tbody></table><p>こう見るとRDAPが優位に見えるが、実際のところよく使うのはWHOISのほうである。<br>なぜなら、RDAPは見づらいから。。。</p><h2 id=実際にrdapを使ってみる>実際にRDAPを使ってみる</h2><p>参考：<a href=https://jprs.jp/registrar/info/rdap/rdap-guide.html>JPRS RDAP ご利用ガイド</a></p><p>上記記事を参考に、「google.co.jp」をRDAPに問い合わせてみる。</p><pre class="astro-code github-dark" data-language=powershell style=background-color:#24292e;color:#e1e4e8;overflow-x:auto tabindex=0><code><span class=line><span style=color:#f97583>></span><span style=color:#79b8ff> Invoke-RestMethod</span><span style=color:#f97583> -</span><span style=color:#e1e4e8>Method Get </span><span style=color:#f97583>-</span><span style=color:#e1e4e8>Uri </span><span style=color:#9ecbff>"https://rdap.gtld.jprs.jp/rdap/domain/google.co.jp"</span></span>
+<span class=line></span>
+<span class=line><span style=color:#79b8ff>Invoke-RestMethod</span><span style=color:#e1e4e8>: {</span></span>
+<span class=line><span style=color:#9ecbff>  "rdapConformance"</span><span style=color:#e1e4e8> : [</span></span>
+<span class=line><span style=color:#9ecbff>    "icann_rdap_response_profile_1"</span><span style=color:#f97583>,</span></span>
+<span class=line><span style=color:#9ecbff>    "icann_rdap_technical_implementation_guide_1"</span><span style=color:#f97583>,</span></span>
+<span class=line><span style=color:#9ecbff>    "rdap_level_0"</span></span>
+<span class=line><span style=color:#e1e4e8>  ]</span><span style=color:#f97583>,</span></span>
+<span class=line><span style=color:#9ecbff>  "notices"</span><span style=color:#e1e4e8> : [ {</span></span>
+<span class=line><span style=color:#9ecbff>    "title"</span><span style=color:#e1e4e8> : </span><span style=color:#9ecbff>"Terms of Use"</span><span style=color:#f97583>,</span></span>
+<span class=line><span style=color:#9ecbff>    "description"</span><span style=color:#e1e4e8> : [</span><span style=color:#9ecbff>"JPRS RDAP Terms of Use"</span><span style=color:#e1e4e8>]</span><span style=color:#f97583>,</span></span>
+<span class=line><span style=color:#9ecbff>    "links"</span><span style=color:#e1e4e8> : [ {</span></span>
+<span class=line><span style=color:#9ecbff>      "value"</span><span style=color:#e1e4e8> : </span><span style=color:#9ecbff>"https://rdap.gtld.jprs.jp/rdap/domain/google.co.jp"</span><span style=color:#f97583>,</span></span>
+<span class=line><span style=color:#9ecbff>      "rel"</span><span style=color:#e1e4e8> : </span><span style=color:#9ecbff>"terms-of-service"</span><span style=color:#f97583>,</span></span>
+<span class=line><span style=color:#9ecbff>      "type"</span><span style=color:#e1e4e8> : </span><span style=color:#9ecbff>"text/html"</span><span style=color:#f97583>,</span></span>
+<span class=line><span style=color:#9ecbff>      "href"</span><span style=color:#e1e4e8> : </span><span style=color:#9ecbff>"https://www.rdap.gtld.jprs.jp/docs/terms_of_use.html"</span></span>
+<span class=line><span style=color:#e1e4e8>    } ]</span></span>
+<span class=line><span style=color:#e1e4e8>  } ]</span><span style=color:#f97583>,</span></span>
+<span class=line><span style=color:#9ecbff>  "lang"</span><span style=color:#e1e4e8> : </span><span style=color:#9ecbff>"en"</span><span style=color:#f97583>,</span></span>
+<span class=line><span style=color:#9ecbff>  "errorCode"</span><span style=color:#e1e4e8> : </span><span style=color:#79b8ff>404</span><span style=color:#f97583>,</span></span>
+<span class=line><span style=color:#9ecbff>  "title"</span><span style=color:#e1e4e8> : </span><span style=color:#9ecbff>"Not Found"</span><span style=color:#f97583>,</span></span>
+<span class=line><span style=color:#9ecbff>  "description"</span><span style=color:#e1e4e8> : [ </span><span style=color:#9ecbff>"No data found for the lookup/search URL."</span><span style=color:#e1e4e8> ]</span></span>
+<span class=line><span style=color:#e1e4e8>}</span></span></code></pre><p>…あれ？<br>この後、色々調べてみたが、よくわからず。<br>そのうち使い方についてはより調べてみる。</p><h2 id=総括>総括</h2><p>RDAPは夢がある技術ではあるものの、正直使う機会が多いかというと微妙。</p><p>WHOISは歴史がある分、情報も多く出回っており、かつテキスト形式なので人間としては見やすい。<br>RDAPは確かに機械で見る分には見やすいのかもしれないが、ぱっと情報を閲覧したい場合には使えない。</p><p>また、RDAPはそこまで周知されているわけでもなく、紹介記事もびっくりするほど少ない。</p><p>個人的には、まだWHOISを使い続けることになりそうだ。<br>新規格なので今後に期待したいが、そもそもWHOISかけて情報調べたいというのは随分ニッチだと思うので、<br>この先10年はWHOISが優勢な気がする。。。</p></div><hr><div style=margin-top:20px><a href=/tech>← 技術ブログ一覧へ戻る</a></div></article></main><footer><p>&copy; 2026 UruFiop. All rights reserved.</p></footer></div><script>const toggle=document.getElementById("menu-toggle"),content=document.getElementById("menu-content");toggle.addEventListener("click",()=>{const e="true"===toggle.getAttribute("aria-expanded");toggle.setAttribute("aria-expanded",!e),content.classList.toggle("is-open")}),document.querySelectorAll('article a[href^="http"]').forEach(e=>{e.href.includes(window.location.hostname)||(e.setAttribute("target","_blank"),e.setAttribute("rel","noopener noreferrer"))})</script></body></html>
